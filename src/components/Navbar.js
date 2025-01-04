@@ -4,16 +4,21 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white p-4">
+    <nav className="bg-blue-700 text-white p-4">
       <div className="flex justify-between items-center">
         {/* Logo di kiri */}
         <div className="flex items-center gap-2">
           <img
-            src="/favicon.png"  // Gantilah dengan path ke logo Anda
+            src="/favicon.png" // Gantilah dengan path ke logo Anda
             alt="Logo"
-            className="h-14 w-14 ml-10"  // Ukuran logo, sesuaikan dengan kebutuhan
+            className="h-14 w-14 ml-10" // Ukuran logo, sesuaikan dengan kebutuhan
           />
-         <span className="inline-block align-middle text-xl mx-2" style={{ lineHeight: "2" }}>|</span>
+          <span
+            className="inline-block align-middle text-xl mx-2"
+            style={{ lineHeight: "2" }}
+          >
+            |
+          </span>
           <h1 className="text-3xl font-bold font-sport">Youth Tiger Soccer School</h1>
         </div>
 
@@ -55,7 +60,7 @@ const Navbar = () => {
                 href="/schedule"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Jadwal
+                Schedule
               </a>
             </li>
             <li>
@@ -63,7 +68,7 @@ const Navbar = () => {
                 href="/registration"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Pendaftaran
+                Registration
               </a>
             </li>
             <li>
@@ -71,7 +76,7 @@ const Navbar = () => {
                 href="/contact"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Kontak
+                Contact
               </a>
             </li>
           </ul>
@@ -80,7 +85,7 @@ const Navbar = () => {
           <span>|</span>
           <a
             href="/login"
-            className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 font-sport"
+            className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 font-sport mr-8"
           >
             Login
           </a>
@@ -104,7 +109,7 @@ const Navbar = () => {
                 href="/schedule"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Jadwal
+                Schedule
               </a>
             </li>
             <li>
@@ -112,7 +117,7 @@ const Navbar = () => {
                 href="/registration"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Pendaftaran
+                Registration
               </a>
             </li>
             <li>
@@ -120,13 +125,13 @@ const Navbar = () => {
                 href="/contact"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Kontak
+                Contact
               </a>
             </li>
             <li>
               <a
                 href="/login"
-                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 font-sport mr-15"
+                className="bg-green-400 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 font-sport mr-5"
               >
                 Login
               </a>
