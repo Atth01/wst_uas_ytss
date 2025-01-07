@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { LazyLoadImage } from "react-lazy-load-image-component"; // Import LazyLoadImage
 
 const Carousel = () => {
   const settings = {
@@ -18,24 +19,30 @@ const Carousel = () => {
     <div className="carousel-container relative">
       <Slider {...settings}>
         <div>
-          <img
+          <LazyLoadImage
             src="/img/ytt.jpg"
             alt="Gambar 1"
             className="w-full h-[500px] object-cover"
+            loading="lazy" // Menambahkan lazy load
+            delayTime={1000} // Delay 1 detik
           />
         </div>
         <div>
-          <img
+          <LazyLoadImage
             src="/img/ytt1.jpg"
             alt="Gambar 2"
             className="w-full h-[500px] object-cover"
+            loading="lazy" // Menambahkan lazy load
+            delayTime={1000} // Delay 1 detik
           />
         </div>
         <div>
-          <img
+          <LazyLoadImage
             src="/img/ytt2.jpg"
             alt="Gambar 3"
             className="w-full h-[500px] object-cover"
+            loading="lazy" // Menambahkan lazy load
+            delayTime={1000} // Delay 1 detik
           />
         </div>
       </Slider>
@@ -58,7 +65,7 @@ const Carousel = () => {
             Welcome to Youth Tiger Soccer School Website
           </h1>
           <p className="text-xl drop-shadow-md">
-            Increase your footbal skill and join with us
+            Increase your football skill and join with us
           </p>
         </div>
       </div>

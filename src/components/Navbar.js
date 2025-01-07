@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-700 text-white p-4">
+    <nav className="bg-blue-700 text-white p-4 overflow-x-hidden">
       <div className="flex justify-between items-center">
         {/* Logo di kiri */}
         <div className="flex items-center gap-2">
