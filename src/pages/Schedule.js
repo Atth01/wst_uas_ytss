@@ -1,10 +1,10 @@
 const Schedule = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 p-8">
       <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-xl p-8 flex flex-col md:flex-row gap-20"> {/* Jarak antar kolom diperbesar */}
         {/* Kolom Kiri - Jadwal Latihan */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold text-center text-blue-600 mb-8">Jadwal Latihan</h2>
+          <h1 className="text-3xl font-bold text-center text-blue-600 mb-8">Jadwal Latihan</h1>
           
           <div className="space-y-8">
             <div className="w-full flex items-center gap-4 p-4 bg-blue-50 rounded-lg shadow-md">
@@ -21,7 +21,7 @@ const Schedule = () => {
 
         {/* Kolom Kanan - Jadwal Pertandingan */}
         <div className="w-full md:w-1/2">
-          <h3 className="text-2xl font-semibold text-center text-blue-600 mb-6">Jadwal Pertandingan Selanjutnya</h3>
+          <h2 className="text-2xl font-semibold text-center text-blue-600 mb-6">Jadwal Pertandingan Selanjutnya</h2>
 
           <div className="space-y-6">
             {/* Pertandingan 1 */}

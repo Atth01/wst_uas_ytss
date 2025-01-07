@@ -19,7 +19,9 @@ const Navbar = () => {
           >
             |
           </span>
-          <h1 className="text-3xl font-bold font-sport">Youth Tiger Soccer School</h1>
+          <h1 className="text-3xl font-bold font-sport">
+            Youth Tiger Soccer School
+          </h1>
         </div>
 
         {/* Tombol Hamburger untuk layar kecil */}
@@ -27,20 +29,7 @@ const Navbar = () => {
           className="block md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
+          <i className="fas fa-bars text-xl"></i>
         </button>
 
         {/* Menu Navigasi + Login */}
@@ -52,7 +41,7 @@ const Navbar = () => {
                 href="/"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Home
+                <i className="fas fa-home mr-2"></i>Home
               </a>
             </li>
             <li>
@@ -60,7 +49,7 @@ const Navbar = () => {
                 href="/schedule"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Schedule
+                <i className="fas fa-calendar-alt mr-2"></i>Schedule
               </a>
             </li>
             <li>
@@ -68,7 +57,7 @@ const Navbar = () => {
                 href="/registration"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Registration
+                <i className="fas fa-user-plus mr-2"></i>Registration
               </a>
             </li>
             <li>
@@ -76,7 +65,7 @@ const Navbar = () => {
                 href="/contact"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Contact
+                <i className="fas fa-phone-alt mr-2"></i>Contact
               </a>
             </li>
           </ul>
@@ -87,21 +76,21 @@ const Navbar = () => {
             href="/login"
             className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 font-sport mr-8"
           >
-            Login
+            <i className="fas fa-sign-in-alt mr-2"></i>Login
           </a>
         </div>
       </div>
 
       {/* Dropdown menu hanya untuk layar kecil */}
       {isOpen && (
-        <div className="md:hidden">
-          <ul className="flex flex-col gap-2 mt-4 font-sport">
+        <div className="md:hidden mt-4">
+          <ul className="flex flex-col gap-2 font-sport">
             <li>
               <a
                 href="/"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Home
+                <i className="fas fa-home mr-2"></i>Home
               </a>
             </li>
             <li>
@@ -109,7 +98,7 @@ const Navbar = () => {
                 href="/schedule"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Schedule
+                <i className="fas fa-calendar-alt mr-2"></i>Schedule
               </a>
             </li>
             <li>
@@ -117,7 +106,7 @@ const Navbar = () => {
                 href="/registration"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Registration
+                <i className="fas fa-user-plus mr-2"></i>Registration
               </a>
             </li>
             <li>
@@ -125,7 +114,7 @@ const Navbar = () => {
                 href="/contact"
                 className="hover:border-b-2 hover:border-white transition duration-300"
               >
-                Contact
+                <i className="fas fa-phone-alt mr-2"></i>Contact
               </a>
             </li>
             <li>
@@ -133,7 +122,7 @@ const Navbar = () => {
                 href="/login"
                 className="bg-green-400 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 font-sport mr-5"
               >
-                Login
+                <i className="fas fa-sign-in-alt mr-2"></i>Login
               </a>
             </li>
           </ul>

@@ -12,7 +12,7 @@ const NewsSection = () => {
             <Link to="/news1">
               <LazyLoadImage
                 src="img/ytt2.jpg"
-                alt="Berita 1"
+                alt="YTSS had won Bogor City Championship - Youth Tiger Soccer School"
                 className="w-full h-48 object-cover rounded-t-lg transform transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 delayTime={1000}
@@ -27,7 +27,7 @@ const NewsSection = () => {
             <Link to="/news2">
               <LazyLoadImage
                 src="img/ytt1.jpg"
-                alt="Berita 2"
+                alt="YTSS made great history in 2025 - Youth Tiger Soccer School"
                 className="w-full h-48 object-cover rounded-t-lg transform transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 delayTime={1000}
@@ -42,7 +42,7 @@ const NewsSection = () => {
             <Link to="/news3">
               <LazyLoadImage
                 src="img/ytt2.jpg"
-                alt="Berita 3"
+                alt="YTSS represent Bogor in National League - Youth Tiger Soccer School"
                 className="w-full h-48 object-cover rounded-t-lg transform transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
                 delayTime={1000}

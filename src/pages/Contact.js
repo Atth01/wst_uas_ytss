@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="p-8 bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen flex items-center justify-center">
+    <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
       <div className="max-w-2xl mx-auto bg-white shadow-2xl rounded-2xl p-8">
         {/* Header */}
         <h1 className="text-4xl font-extrabold text-center text-blue-700 mb-8 tracking-wide">
@@ -33,22 +33,38 @@ const Contact = () => {
         
         {/* Sosial Media */}
         <div className="mt-10 text-center">
-          <h3 className="text-2xl font-bold text-gray-800">
-            Ikuti Kami di Sosial Media
-          </h3>
-          <p className="text-gray-600 mt-2">Dapatkan informasi terbaru melalui platform kami</p>
-          <div className="flex gap-8 mt-6 justify-center">
-            <a href="https://facebook.com" className="text-blue-700 hover:text-blue-900 text-3xl">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com" className="text-blue-400 hover:text-blue-600 text-3xl">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/youthtiger.ss/" className="text-pink-600 hover:text-pink-800 text-3xl">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
+  <h3 className="text-2xl font-bold text-gray-800">
+    Ikuti Kami di Sosial Media
+  </h3>
+  <p className="text-gray-600 mt-2">Dapatkan informasi terbaru melalui platform kami</p>
+  <div className="flex gap-8 mt-6 justify-center">
+    <a
+      href="https://facebook.com"
+      className="text-blue-700 hover:text-blue-900 text-3xl"
+      target="_blank" // Membuka link di tab baru
+      rel="noopener noreferrer" // Menambah keamanan dengan menghindari masalah terkait referer
+    >
+      <i className="fab fa-facebook"></i>
+    </a>
+    <a
+      href="https://twitter.com"
+      className="text-blue-400 hover:text-blue-600 text-3xl"
+      target="_blank" // Membuka link di tab baru
+      rel="noopener noreferrer" // Menambah keamanan dengan menghindari masalah terkait referer
+    >
+      <i className="fab fa-twitter"></i>
+    </a>
+    <a
+      href="https://www.instagram.com/youthtiger.ss/"
+      className="text-pink-600 hover:text-pink-800 text-3xl"
+      target="_blank" // Membuka link di tab baru
+      rel="noopener noreferrer" // Menambah keamanan dengan menghindari masalah terkait referer
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
       </div>
     </div>
   );

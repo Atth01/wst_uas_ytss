@@ -11,7 +11,7 @@ const Breadcrumb = () => {
   }
 
   return (
-    <nav className="bg-grey-400 px-5 py-3 rounded-md w-full overflow-x-hidden mt-4 ">
+    <nav className="bg-gradient-to-br from-blue-50 to-blue-100 px-5 py-3 rounded-md w-full overflow-x-hidden ">
       <ol className="list-reset flex text-gray-700 m-0 p-0">
         <li className="m-0">
           <Link to="/" className="text-blue-600 hover:text-orange-400"> {/* Hover orange */}
