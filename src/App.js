@@ -7,6 +7,8 @@ import Home from "./pages/Home"; // Halaman Home
 import Schedule from "./pages/Schedule"; // Halaman Jadwal
 import Registration from "./pages/Registration"; // Halaman Pendaftaran
 import Contact from "./pages/Contact"; // Halaman Kontak
+import NewsSection from "./components/NewsSection"; // Halaman Berita
+import NewsDetail from "./components/NewsDetail"; // Halaman Detail Berita
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/news" element={<NewsSection />} />
+            <Route path="/news/:newsId" element={<NewsDetail />} /> {/* Tambahkan ini */}
           </Routes>
         </div>
       </Router>
